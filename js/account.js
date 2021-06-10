@@ -11,6 +11,22 @@ scrollButton.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
+//making a responsive nav menu
+const navMenu = document.querySelector(".hamburger-Button");
+const navigation = document.querySelector(".navigation");
+const navMenuItems = document.querySelectorAll("navigation a")
+navMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+navMenuItems.forEach((navigationItem) => {
+  navigationItem.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    navigation.classList.remove("active");
+  })
+});
+
 //revealing hidden items.
 window.addEventListener("scroll", reveal);
 
