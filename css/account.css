@@ -1,0 +1,28 @@
+.scrollToTop-arrow {
+  z-index: 999;
+  position: fixed;
+  background: #ff0800;
+  width: 2.81rem;
+  height: 2.81rem;
+  right: 0;
+  bottom: 0.625rem;
+  font-size: 1.375rem;
+  text-align: center;
+  line-height: 2.81rem;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.scrollToTop-arrow.active {
+    display: block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: url(../media/parts.png) no-repeat;
+    background-position: -630px -460px;
+    text-indent: -9999px;
+    pointer-events: auto;
+    opacity: 1;
+}
