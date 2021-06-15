@@ -2,7 +2,7 @@
 const scrollButton = document.querySelector(".scrollToTop-arrow");
 
 window.addEventListener("scroll", function() {
-  scrollButton.classList.toggle("active", window.scrollY > 500)
+  scrollButton.classList.toggle("active", window.scrollY > 250)
 });
 
 //clicking on the Scroll to top button, taking you back to the start of the page  
