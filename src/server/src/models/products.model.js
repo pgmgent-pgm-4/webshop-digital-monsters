@@ -12,8 +12,9 @@ export default (sequelize) => {
 		{
 			title: DataTypes.STRING,
       brand: DataTypes.STRING,
-			description: DataTypes.TEXT,
+			description: DataTypes.STRING,
       price: DataTypes.NUMBER,
+      ProductImage: DataTypes.STRING,
 		},
 		{
 			sequelize,
