@@ -5,8 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development HOSTNAME=localhost PORT=8080 nodemon --exec babel-node -e js,html,nj src/app.js --watch src/*",
-    "lint": "cross-env NODE_ENV=lint eslint . --ext .js --fix",
-    "seeder:products": "babel-node ../products-seeder.js --debug --presets airbnb"
+    "lint": "cross-env NODE_ENV=lint eslint . --ext .js --fix"
   },
   "keywords": [
     "node.js",
