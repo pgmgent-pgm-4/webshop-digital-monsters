@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.hamburgermenu {
+    margin: 1rem;
+}
+
+.hamburgermenu img {
+    margin-top: 0.5rem;
+}
+
+.logo {
+    margin: 1.9rem 1rem;
+}
+
+.rest {
+    margin: 1rem;
+}
+
+.rest img {
+    margin-top: 0.5rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.main-top h1 {
+    margin-bottom: 0;
+}
+
+.main-top h2 {
+    margin-top: 0;
+}
+
+.main-top h1 {
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.card img {
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 0.5rem;
+}
+
+.card-text h1 {
+    font-size: 1rem;
+}
+
+/* .card-rating {
+
+} */
+
+.card-text ul {
+    display: flex;
+}
+  
+.card-text ul li::after {
+    content: '|';
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 0.6rem;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+    font-size: 0.7rem;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+/* footer {
+    background-color: #020202;
+    width: 100%;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 95%;
+} */
+
+@media(min-width: 23.5rem) {
+    .card {
+        max-width: 22rem;
+        flex-direction: column;
+        max-width: 22rem;
+    }
+    
+    .card img {
+        width: 20.8rem;
+        height: 13rem;
+    }
+
+    .card-text {
+        margin: 1rem;
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
