@@ -8,14 +8,14 @@
     cacheElements() {
       console.log('2. Caching the elemnts');
       this.$button = document.querySelector('.hamburger');
-      this.$button2 = document.querySelector('.mobile-close');
+      this.$button2 = document.querySelector('.nav');
     },
     eventListener(){
       this.$button.addEventListener('click', () => this.hamburgerMenu());
       this.$button2.addEventListener('click', () => this.hamburgerMenu());
     },
     hamburgerMenu() {
-      let box = document.querySelector(".mobile-nav")
+      let box = document.querySelector('.mobile-nav');
       console.log(box)
       if (box.classList.contains('open')) {
         box.classList.remove('open');
