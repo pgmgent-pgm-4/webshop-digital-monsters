@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.hamburgermenu {
+    margin: 1rem;
+}
+
+.hamburgermenu img {
+    margin-top: 0.5rem;
+}
+
+.logo {
+    margin: 1.9rem 1rem;
+}
+
+.rest {
+    margin: 1rem;
+}
+
+.rest img {
+    margin-top: 0.5rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+
+.banner img {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 22rem;
+    text-align: center;
+}
+
+.card img {
+    width: 16.8rem;
+    margin-top: 1rem;
+}
+
+.card h1 {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+.checked {
+    color: orange;
+}
+
+.card-info {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.card-info ul {
+    display: flex;
+}
+  
+.card-info ul li::after {
+    content: '|';
+}
+
+.price {
+    color: grey;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+/* footer {
+    background-color: #020202;
+    width: 100%;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 95%;
+} */
