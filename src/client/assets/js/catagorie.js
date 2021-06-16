@@ -62,7 +62,6 @@ const CARD_API = 'http://localhost:8080/api/products';
   
       updateCard(data) {
         this.$card.innerHTML = data.slice(0,3).map((ca) => {
-  
           return `
           <article class="card-all">
             <div class="card">

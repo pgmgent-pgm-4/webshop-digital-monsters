@@ -25,46 +25,157 @@ header {
     width: 100%
 }
 
-.navbar {
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 99999;
+    overflow-y: auto;
+    font-family: 'Raleway-regular';
+  }
+  
+  .mobile-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .about-container {
+    margin-bottom: 5rem;
+  }
+  
+  .mobile-close path {
+    fill: #FFF;
+  }
+  
+  .mobile-nav.open {
+    display: block;
+  }
+  
+  .mobile-nav ul {
+    padding: 1rem;
+  }
+  
+  .mobile-nav ul li {
+    padding-bottom: 1rem;
+  }
+  
+  .mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hamburger {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 95%;
-}
-
-.navbar ul {
+    background: #000;
+    padding: 1rem;
+  }
+  
+  
+  .logo-img {
+    align-self: center;
+  }
+  
+  .hamb-logo {
+    cursor: pointer;
+  }
+  
+  .hamburger svg {
+    width: 1.7rem;
+    color: blue;
+    fill: white;
+  }
+  
+  .hamburger svg path {
+    color: red;
+  }
+  
+  .nav {
     display: flex;
-}
-
-.navbar ul li a {
-    color: white;
-}
-
-.hamburgermenu {
-    margin: 1rem;
-}
-
-.hamburgermenu img {
-    margin-top: 0.5rem;
-}
-
-.logo {
-    margin: 1.9rem 1rem;
-}
-
-.rest {
-    margin: 1rem;
-}
-
-.rest img {
-    margin-top: 0.5rem;
-}
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 48rem) {
+    .hamb-logo {
+      display: none;
+    }
+  
+    .mobile-nav.open {
+      display: unset;
+    }
+  
+    .nav {
+      flex-direction: row;
+    }
+  
+    .mobile-nav {
+      height: fit-content;
+      position: unset;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .mobile-nav .open {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      list-style: none;
+      display: block;
+    }
+  
+    .mobile-nav ul {
+      position: absolute;
+      display: flex;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    .mobile-nav ul li {
+      padding-bottom: 1rem;
+      list-style-type: none;
+      font-size: 0.1rem;
+    }
+  
+    .mobile-nav a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      color: #fff;
+    }
+  
+    .mobile-nav a:hover {
+      text-decoration: underline;
+    }
+  
+    .mobile-open.nav svg {
+      display: none;
+    }
+  
+  
+    .mobile-close {
+      display: none;
+    }
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+  }
 
 main {
     margin: 0 auto;
     max-width: 95%;
 }
-
 
 .banner img {
     width: 100%;
@@ -72,11 +183,23 @@ main {
     object-fit: cover;
     object-position: center;
     margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.all-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-all {
+    max-width: 22rem;
+    width: 100%;
+    margin-bottom: 5rem;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 22rem;
     text-align: center;
 }
 
@@ -131,19 +254,59 @@ main {
     opacity: 0.7;
 }
 
-
-
-
-
-
-/* footer {
-    background-color: #020202;
-    width: 100%;
+@media(min-width: 23.5rem) {
+    .card-all {
+        width: 23%;
+    }
 }
 
-.all {
-    display: flex;
-    justify-content: space-between;
+footer {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer-row {
+    max-width: 90rem;
     margin: 0 auto;
-    max-width: 95%;
-} */
+  }
+  
+  @media (min-width: 48rem) {
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column h4:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul:last-child {
+    margin-right: 1.5rem;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
