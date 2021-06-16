@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 body {
@@ -187,60 +184,12 @@ img {
   width: 100%;
 }
 
-textarea {
-  width: 100%;
-}
-
-.detail-title {
-  text-align: center;
-}
-
-.detail-title h1 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.detail-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
-.detail-text svg {
-  margin-right: 0.3rem;
-  fill: green;
-}
-
-.detail-text p {
-  padding-left: 1rem;
-}
-
-.images img {
-  width: 50%;
-}
-
-.images {
-  margin-bottom: 5rem;
-}
-
-.small-images {
-  margin-bottom: 5rem;
-}
-
-.small-images img {
-  width: 5rem;
-  height: 5rem;
-}
-
-.about-games h2 {
-  text-align: center;
-}
-
 .positivity {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
 }
 
 .positivity svg {
@@ -252,28 +201,85 @@ textarea {
   width: 85%;
 }
 
-.negativity {
+.shopping-title h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.shopping-title h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.plus-minus {
+  padding: 1rem;
+}
+
+.minus-img img {
+  width: 6rem;
+  height: 10rem;
+}
+
+.plus-minus {
   display: flex;
   justify-content: space-between;
+}
+
+.minus-img {
+  align-self: center;
+}
+
+.plus-minus-text p {
+  color: #000;
+}
+
+.numbers p {
+  color: #000;
+  border: 1px solid #000;
+  width: 2rem;
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sending {
   padding: 1rem;
 }
 
-.negativity svg {
-  width: 10%;
-}
-
-.negativity p {
-  width: 85%;
-}
-
-.information {
-  padding: 1rem;
-}
-
-.information p {
+.sending p {
   font-size: 1.2rem;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+}
+
+.button-send {
+  padding: 1rem;
+}
+
+.button-send button {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 4rem;
+}
+
+.button-send button:hover {
+  background-color: green;
+  color: white;
+}
+
+.payment-icons {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+
+.payment-icons img {
+  width: 20%;
 }
 
 footer {
@@ -292,6 +298,14 @@ footer {
     justify-content: space-between;
   }
 
+  .shopping-title h1 {
+    text-align: left;
+  }
+
+  .shopping-title h2 {
+    text-align: left;
+  }
+
   .small-images {
     display: flex;
     padding: 1rem;
@@ -301,6 +315,15 @@ footer {
   .small-images img {
     width: 10rem;
     height: 10rem;
+  }
+
+  .sending {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-send button {
+    width: 50%;
   }
 }
 
@@ -335,31 +358,4 @@ footer {
 
 .footer-column ul li a:hover {
   text-decoration: underline;
-}
-
-
-
-@media(min-width: 23.5rem) {
-  .card {
-    max-width: 22rem;
-    flex-direction: column;
-    max-width: 22rem;
-  }
-
-  .card-text {
-    margin: 1rem;
-  }
-
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-
 }
