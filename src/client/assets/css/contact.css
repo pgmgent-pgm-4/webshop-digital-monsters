@@ -201,7 +201,6 @@ input {
 .text__small {
   padding: 1rem;
   border: 1px solid black;
-  font-size: 1.5rem;
   border-radius: 0.2rem;
 }
 
@@ -306,6 +305,7 @@ footer {
 
   .text__small {
     padding: 2rem 1rem;
+    font-size: 1.5rem;
   }
 }
 
