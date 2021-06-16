@@ -282,7 +282,6 @@ textarea {
   main {
     max-width: 80%;
   }
-
 }
 
 footer {
@@ -291,7 +290,7 @@ footer {
 }
 
 .footer-row {
-  max-width: 90rem;
+  max-width: 97rem;
   margin: 0 auto;
 }
 

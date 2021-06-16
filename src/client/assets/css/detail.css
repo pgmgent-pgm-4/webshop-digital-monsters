@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 99999;
+  overflow-y: auto;
+  font-family: 'Raleway-regular';
+}
+
+.mobile-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.about-container {
+  margin-bottom: 5rem;
+}
+
+.mobile-close path {
+  fill: #FFF;
+}
+
+.mobile-nav.open {
+  display: block;
+}
+
+.mobile-nav ul {
+  padding: 1rem;
+}
+
+.mobile-nav ul li {
+  padding-bottom: 1rem;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  padding: 1rem;
+}
+
+
+.logo-img {
+  align-self: center;
+}
+
+.hamb-logo {
+  cursor: pointer;
+}
+
+.hamburger svg {
+  width: 1.7rem;
+  color: blue;
+  fill: white;
+}
+
+.hamburger svg path {
+  color: red;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 48rem) {
+  main {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hamb-logo {
+    display: none;
+  }
+
+  .mobile-nav.open {
+    display: unset;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .mobile-nav {
+    height: fit-content;
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .mobile-nav .open {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    list-style: none;
+    display: block;
+  }
+
+  .mobile-nav ul {
+    position: absolute;
+    display: flex;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .mobile-nav ul li {
+    padding-bottom: 1rem;
+    list-style-type: none;
+    font-size: 0.1rem;
+  }
+
+  .mobile-nav a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+  }
+
+  .mobile-nav a:hover {
+    text-decoration: underline;
+  }
+
+  .mobile-open.nav svg {
+    display: none;
+  }
+
+
+  .mobile-close {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  main {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 90rem) {
+  main {
+    max-width: 80%;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.detail-title {
+  text-align: center;
+}
+
+.detail-title h1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.detail-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.detail-text svg {
+  margin-right: 0.3rem;
+  fill: green;
+}
+
+.detail-text p {
+  padding-left: 1rem;
+}
+
+.images img {
+  width: 50%;
+}
+
+.images {
+  margin-bottom: 5rem;
+}
+
+.small-images {
+  margin-bottom: 5rem;
+}
+
+.small-images img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.about-games h2 {
+  text-align: center;
+}
+
+.positivity {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.positivity svg {
+  width: 10%;
+  fill: green;
+}
+
+.positivity p {
+  width: 85%;
+}
+
+
+.negativity {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.negativity svg {
+  width: 10%;
+}
+
+.negativity p {
+  width: 85%;
+}
+
+.information {
+  padding: 1rem;
+}
+
+.information p {
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-row {
+  max-width: 97rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 48rem) {
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .small-images {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .small-images img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column h4:hover {
+  text-decoration: underline;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul:last-child {
+  margin-right: 1.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media(min-width: 23.5rem) {
+  .card {
+    max-width: 22rem;
+    flex-direction: column;
+    max-width: 22rem;
+  }
+
+  .card-text {
+    margin: 1rem;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+}

@@ -103,6 +103,11 @@ header {
 }
 
 @media (min-width: 48rem) {
+  main {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
   .hamb-logo {
     display: none;
   }
@@ -164,6 +169,18 @@ header {
   }
 }
 
+@media (min-width: 64rem) {
+  main {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 90rem) {
+  main {
+    max-width: 80%;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -172,24 +189,35 @@ textarea {
   width: 100%;
 }
 
-main {
-  margin: 0 auto;
-  max-width: 95%;
+
+.main-top h1 {
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  text-align: center;
 }
 
-.banner img {
-  width: 100%;
-  max-height: 30rem;
-  object-fit: cover;
-  object-position: center;
-  margin-top: 1rem;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+.main-top h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 64rem) {
+  .main-top h1 {
+    text-align: left;
+    padding-left: 2.2rem;
+  }
+
+  .main-top h2 {
+    text-align: left;
+    margin-bottom: 4rem;
+    padding-left: 2.2rem;
+  }
 }
 
 .all-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card-all {
@@ -206,12 +234,14 @@ main {
 .card img {
   width: 100%;
   margin-top: 1rem;
+  padding: 1rem;
 }
 
 .card h1 {
   font-size: 1rem;
   text-align: left;
   margin: 1rem;
+  color: blue;
 }
 
 .checked {
@@ -223,8 +253,8 @@ main {
   margin-left: 1rem;
 }
 
-.card-info ul {
-  display: flex;
+.card-info ul li {
+  padding-bottom: 1rem;
 }
 
 .card-info ul li::after {
@@ -254,11 +284,7 @@ main {
   opacity: 0.7;
 }
 
-@media(min-width: 23.5rem) {
-  .card-all {
-    width: 45%;
-  }
-}
+@media(min-width: 23.5rem) {}
 
 footer {
   background-color: #000;
@@ -271,72 +297,10 @@ footer {
 }
 
 @media (min-width: 48rem) {
-  main {
-    margin: 0 auto;
-    max-width: 90%;
-  }
-
-  input {
-    padding: 1rem;
-  }
-
-  .contact-select h1 {
-    font-size: 2.5rem;
-  }
-
   .footer-row {
     display: flex;
     justify-content: space-between;
-  }
 
-  .contact-quest {
-    display: flex;
-  }
-
-  .contact-quest p {
-    justify-self: center;
-    align-self: center;
-    font-size: 1.5rem;
-  }
-
-  .contact-quest h3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.45rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .input-twice {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  main {
-    max-width: 85%;
-  }
-
-  .input-flex {
-    width: 47%;
-  }
-
-  .input-area {
-    width: 100%;
-  }
-
-  button {
-    width: 50%;
-  }
-}
-
-@media (min-width: 90rem) {
-  main {
-    max-width: 80%;
-  }
-
-  .text__small {
-    padding: 2rem 1rem;
-    font-size: 1.5rem;
   }
 }
 
@@ -371,4 +335,31 @@ footer {
 
 .footer-column ul li a:hover {
   text-decoration: underline;
+}
+
+
+
+@media(min-width: 23.5rem) {
+  .card {
+    max-width: 22rem;
+    flex-direction: column;
+    max-width: 22rem;
+  }
+
+  .card-text {
+    margin: 1rem;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
 }
