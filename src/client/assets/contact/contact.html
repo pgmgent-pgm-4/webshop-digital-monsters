@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tolunay Kutlu Portfolio</title>
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
@@ -26,18 +26,17 @@
 
                 </div>
                 <nav class="mobile-nav">
-
                     <svg class="mobile-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path
                             d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                     </svg>
                     <div class="nav">
-                        <a href="#">Home</a>
+                        <a href="">Home</a>
                         <a href="#">Consoles</a>
                         <a href="#">Games</a>
-                        <a href="#">Support</a>
-                        <a href="#">About us</a>
+                        <a href="../contact/contact.html">Contact</a>
+                        <a href="../about/about.html">About us</a>
                     </div>
                     <div class="flexer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -67,23 +66,42 @@
                 <p>Vul dan onderstaand contactformulier in.</p>
             </div>
             <div class="contact-items">
-                <label for="">Naam</label>
-                <input type="text"><br>
-                <label for="">Email</label>
-                <input type="text"><br>
-                <label for="">Adress</label>
-                <input type="text"><br>
-                <label for="">Telefoon</label>
-                <input type="text"><br>
-                <label for="">Adress</label>
-                <input type="text"><br>
-                <label for="">Telefoon</label>
-                <input type="text"><br>
-                <label for="">Opmerking</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                <p>Door te veel aanvraag kan het zijn dat wij jou niet direct kunnen contacteren,
-                    Gelieve hier een bericht achter te laten.</p>
-                <input type="button" value="">
+                    <div class="input-twice">
+                        <div class="input-flex">
+                            <label for="">Naam</label>
+                            <input type="text"><br>
+                        </div>
+                        <div class="input-flex">
+                            <label for="">Email</label>
+                            <input type="text"><br>
+                        </div>
+                    </div>
+                    <div class="header-input">
+                    <div class="input-twice">
+                        <div class="input-flex">
+                            <label for="">Adress</label>
+                            <input type="text"><br>
+                        </div>
+                        <div class="input-flex">
+                            <label for="">Telefoon</label>
+                            <input type="text"><br>
+                    </div>
+                </div>
+                    <div class="input-area">
+                        <label for="">Opmerking</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                    </div>
+                </div>
+                
+                <p class="text__small">Door te veel aanvraag kan het zijn dat wij jou niet direct kunnen contacteren,
+                    Gelieve hier een bericht achter te laten.
+                    Bij problemen kan je ook hier terecht komen een berichtje achter laten zodat wij u zo spoedig mogelijk kunnen helpen.</p>
+                    
+                <div class="rules">
+                    <input type="checkbox"> 
+                    <label for="">Ik heb de <strong>Privacy disclaimer</strong> gelezen en ga hiermee akkoord.</label><br>
+                </div>
+                <button>Doorgaan</button>
             </div>
         </div>
     </main>

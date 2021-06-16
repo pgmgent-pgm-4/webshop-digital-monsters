@@ -222,24 +222,7 @@ textarea {
   text-align: center;
 }
 
-.contact-select h1 {
-  text-align: left;
-  padding-top: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-}
 
-.contact-quest h3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.contact-quest p {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 0.9rem;
-}
 
 @media (min-width: 48rem) {
   main {
