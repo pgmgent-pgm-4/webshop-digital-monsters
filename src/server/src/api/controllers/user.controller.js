@@ -2,50 +2,51 @@ import { handleHTTPError } from '../../utils';
 import database from '../../database';
 
 /*
-Get all products
+Get all users
 */
 const getUsers = async (req, res, next) => {
 	try {
 		// Get products from database
-		const users = await database.Products.findAll();
+		const users = await database.Users.findAll();
 		// Send response
-		res.status(200).json(products);
+		res.status(200).json(users);
 	} catch (error) {
 		handleHTTPError(error, next);
 	}
 };
 
 /*
-Get a specific product
+Get a specific Users
 */
-const getProductById = async (req, res, next) => {
+const getUsersById = async (req, res, next) => {
 	try {
 		// Get productId parameter
-		const { productId } = req.params;
+		const { id } = req.params;
 		// Get specific product from database
-		const product = await database.Products.findAll({
+		const users = await database.Users.findAll({
 			where: {
-				id: productId,
+				id: id,
 			},
 		});
 		// Send response
-		res.status(200).json(product);
+		res.status(200).json(users);
 	} catch (error) {
 		handleHTTPError(error, next);
 	}
 };
 
 /*
-Create a specific product
+Create a specific Users
 */
-const createProduct = async (req, res, next) => {
+const createUsers = async (req, res, next) => {
 	try {
 		// Get body from response
 		const model = req.body;
 		// Create a post
-		const product = await database.Products.create(model);
+		const users = await database.Users.create(model);
+    console.log(users)
 		// Send response
-		res.status(201).json(product);
+		res.status(201).json(users);
 	} catch (error) {
 		handleHTTPError(error, next);
 	}
@@ -54,51 +55,51 @@ const createProduct = async (req, res, next) => {
 /*
 Create a specific product
 */
-const updateProduct = async (req, res, next) => {
+const updateUsers = async (req, res, next) => {
 	try {
 		// Get categoryId parameter
-		const { productId } = req.params;
-		console.log(productId);
+		const { id } = req.params;
+		console.log(id);
 		// Get specific category from database
-		const product = await database.Products.findByPk(productId);
+		const users = await database.Users.findByPk(id);
 
-		if (product === null) {
-			throw new HTTPError(`Could not found the category with id ${productId}!`, 404);
+		if (users === null) {
+			throw new HTTPError(`Could not found the category with id ${id}!`, 404);
 		}
 
 		// Update a specific post
 		const model = req.body;
-		const updatedProduct = await database.Products.update(model, {
+		const updatedUsers = await database.Users.update(model, {
 			where: {
-				id: productId,
+				id: id,
 			},
 		});
 
 		// Send response
-		res.status(200).json(updatedProduct);
+		res.status(200).json(updatedUsers);
 	} catch (error) {
 		handleHTTPError(error, next);
 	}
 };
 
 /*
-Create a specific product
+Create a specific Users
 */
-const deleteProduct = async (req, res, next) => {
+const deleteUsers = async (req, res, next) => {
 	try {
 		// Get productId parameter
-		const { productId } = req.params;
+		const { id } = req.params;
 		// Get specific product from database
-		const product = await database.Products.findByPk(productId);
+		const users = await database.Users.findByPk(id);
 
-		if (product === null) {
-			throw new HTTPError(`Could not found the category with id ${productId}!`, 404);
+		if (users === null) {
+			throw new HTTPError(`Could not found the category with id ${id}!`, 404);
 		}
 
 		// Delete a product with specified id
-		const message = await database.Products.destroy({
+		const message = await database.Users.destroy({
 			where: {
-				id: productId,
+				id: id,
 			},
 		});
 
@@ -108,4 +109,4 @@ const deleteProduct = async (req, res, next) => {
 		handleHTTPError(error, next);
 	}
 };
-export { getProductById, getProducts, createProduct, updateProduct, deleteProduct };
+export { getUsersById, getUsers, createUsers, updateUsers, deleteUsers };

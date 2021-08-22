@@ -14,6 +14,8 @@ export default (sequelize) => {
       brand: DataTypes.STRING,
 			description: DataTypes.TEXT,
       price: DataTypes.NUMBER,
+      tag: DataTypes.TEXT,
+      synopsis: DataTypes.TEXT,
 		},
 		{
 			sequelize,
